@@ -1,0 +1,37 @@
+void setup() {
+  // Visual confirmation LED
+  pinMode(A3, OUTPUT);
+  // onboard LED (Servo)
+  pinMode(D7, OUTPUT);
+  // IR motion sensor (Hall effect sensor)
+  pinMode(D1, INPUT);
+  Particle.function("lock", lock);
+
+}
+
+int lock(String message)
+{
+    // ACTIVATE DOOR LOCK HERE
+    digitalWrite(D7, !digitalRead(D7));
+    return 0;
+}
+
+
+void loop() {
+    
+    // sensor is HIGH, cat has been detected
+	if(digitalRead(D1) == HIGH)
+	{
+	    // Publish cat event for pi to see
+	    Particle.publish("catHere", "true");
+	    // Activate LED for visual confirmation
+	    digitalWrite(A3, HIGH);
+	}
+	// else publish "nothing" for the sake of logging
+	else{
+	    Particle.publish("nothing");
+	    // Turn off LED
+	    digitalWrite(A3, LOW);
+	}
+	delay(1000);
+}
