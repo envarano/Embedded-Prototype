@@ -19,9 +19,9 @@ https://pypi.org/project/sseclient/
 
 After installing all dependencies, replace all areas containing "PARTICLE_ACCOUNT_TOKEN" with token of your particle account. You can get this by downloading the particle CLI at https://docs.particle.io/tutorials/developer-tools/cli/ and using the command "particle token list".
 
-"BOT_TOKEN" should be replaced with the token of a discord bot.
+"BOT_TOKEN" should be replaced with the token of a discord bot. You can create one easily at https://discord.com/developers/applications and then select "new application" click the "bots" tab, click "add bot" then select "reveal token".
 
-System 1 (particle photon/argon) should have particle-code flashed to it.
+System 1 (particle photon/argon) should have particle-code (https://github.com/envarano/Embedded-Prototype/blob/master/particle-code) flashed to it.
 
 Install and open Discord on PC or phone.
 
