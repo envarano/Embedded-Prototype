@@ -2,16 +2,16 @@
 
 ## Dependencies
 
-# dbl
+### dbl
 https://github.com/DiscordBotList/DBL-Python-Library
 
-# discord.py
+### discord.py
 https://github.com/Rapptz/discord.py
 
-# pyparticle
+### pyparticle
 https://github.com/howardpaget/pyparticle
 
-# sseclient
+### sseclient
 https://pypi.org/project/sseclient/
 
 
