@@ -2,16 +2,16 @@
 
 ## Dependencies
 
-### dbl
+#### dbl
 https://github.com/DiscordBotList/DBL-Python-Library
 
-### discord.py
+#### discord.py
 https://github.com/Rapptz/discord.py
 
-### pyparticle
+#### pyparticle
 https://github.com/howardpaget/pyparticle
 
-### sseclient
+#### sseclient
 https://pypi.org/project/sseclient/
 
 
@@ -19,7 +19,7 @@ https://pypi.org/project/sseclient/
 
 After installing all dependencies, replace all areas containing "PARTICLE_ACCOUNT_TOKEN" with token of your particle account. You can get this by downloading the particle CLI at https://docs.particle.io/tutorials/developer-tools/cli/ and using the command "particle token list".
 
-"BOT_TOKEN" should be replaced with the token of a discord bot, or you can use my token Njk2MzIzMTIzMTA4MzgwNzAy.XtpacQ.YZlM-Wno2wP70-wfjQntKKzzjfU
+"BOT_TOKEN" should be replaced with the token of a discord bot.
 
 System 1 (particle photon/argon) should have particle-code flashed to it.
 
